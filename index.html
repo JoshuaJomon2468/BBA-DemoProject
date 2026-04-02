@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBA (Honours) | Amal Jyothi Business School</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="icon" type="image/png" href="ajcelogo.png">
+    <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiQW1hbCBKeW90a醐 Business School - BBA (Honours)\",Im9ydCI6IkFNS0EgQkhBIEhPTlVMUyIsInN0YXJ0X3VybCI6Ii8iLCJkaXNwbGF5Ijoic3RhbmRhbG9uZSIsInRoZW1lX2NvbG9yIjoiI2JlMjU0NiIsImJhY2tncm91bmRfb2xvciI6IiMwMzA3MTIifQ==">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fdf2f4',
+                            100: '#fbe6e9',
+                            200: '#f5cdd5',
+                            300: '#efa4b3',
+                            400: '#e47188',
+                            500: '#d54361',
+                            600: '#be2546', 
+                            700: '#a01a35',
+                            800: '#861830',
+                            900: '#72192c',
+                            dark: '#030712', 
+                            surface: '#0f172a'
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.05)',
+                        'glow': '0 0 40px rgba(190, 37, 70, 0.5)',
+                        'float': '0 30px 60px -10px rgba(0,0,0,0.08)',
+                        'card-hover': '0 30px 70px -15px rgba(190,37,70,0.3)',
+                        'glass': 'inset 0 0 0 1px rgba(255, 255, 255, 0.1)',
+                        'inner-soft': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)'
+                    },
+                    transitionTimingFunction: {
+                        'expo': 'cubic-bezier(0.16, 1, 0.3, 1)',
+                        'bounce-smooth': 'cubic-bezier(0.34, 1.56, 0.64, 1)',
+                    },
+                    animation: {
+                        'gradient-x': 'gradient-x 8s ease infinite',
+                        'float': 'float 8s ease-in-out infinite',
+                        'float-delayed': 'float 8s ease-in-out 4s infinite',
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'marquee-fast': 'marquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        'gradient-x': {
+                            '0%, 100%': { 'background-size': '200% 200%', 'background-position': 'left center' },
+                            '50%': { 'background-size': '200% 200%', 'background-position': 'right center' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-25px) rotate(2deg)' },
+                        },
+                        'marquee': {
+                            '0%': { transform: 'translateX(0)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base & Scrollbar */
+        body { font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; background-color: #fafafa; color: #0f172a; }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020617; }
+        ::-webkit-scrollbar-thumb { background: #be2546; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a01a35; }
+
+        /* Lenis Smooth Scrolling */
+        html.lenis, html.lenis body { height: auto; }
+        .lenis.lenis-smooth { scroll-behavior: auto !important; }
+        .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+        .lenis.lenis-stopped { overflow: hidden; }
+
+        /* Progress Bar */
+        #scroll-progress { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, #be2546, #ff7e9a); width: 0%; z-index: 10000; transition: width 0.1s ease-out; }
+
+        /* SaaS Grain Texture overlay */
+        .bg-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.04;
+            pointer-events: none;
+            mix-blend-mode: overlay;
+        }
+
+        /* Custom Cursor */
+        @media (hover: hover) and (pointer: fine) {
+            body { cursor: none; }
+            .cursor-dot, .cursor-outline { position: fixed; top: 0; left: 0; transform: translate(-50%, -50%); border-radius: 50%; pointer-events: none; z-index: 9999; mix-blend-mode: difference;}
+            .cursor-dot { width: 8px; height: 8px; background-color: #fff; transition: width 0.2s, height 0.2s, opacity 0.2s; }
+            .cursor-outline { width: 40px; height: 40px; border: 1px solid rgba(255, 255, 255, 0.5); transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s; }
+            body.hovering .cursor-dot { width: 0; height: 0; opacity: 0; }
+            body.hovering .cursor-outline { width: 64px; height: 64px; background-color: #fff; border-color: transparent; mix-blend-mode: difference; }
+            body.video-hover .cursor-outline { width: 90px; height: 90px; background-color: #be2546; border-color: transparent; mix-blend-mode: normal; display: flex; align-items: center; justify-content: center;}
+            body.video-hover .cursor-outline::after { content: 'PLAY'; color: white; font-size: 11px; font-weight: 800; letter-spacing: 2px; position: absolute; }
+            body.video-hover .cursor-dot { opacity: 0; }
+        }
+        @media (hover: none) or (pointer: coarse) { .cursor-dot, .cursor-outline { display: none !important; } body { cursor: auto !important; } }
+
+        /* 3D Flowing Text */
+        .stroke-text { -webkit-text-stroke: 1px rgba(255,255,255,0.06); color: transparent; }
+        .stroke-text-light { -webkit-text-stroke: 1px rgba(255,255,255,0.2); color: transparent; }
+
+        /* High-End Text Mask Reveal */
+        .mask-wrapper { overflow: hidden; display: block; padding-bottom: 8px; margin-bottom: -8px;}
+        .mask-text { display: block; transform: translateY(110%) rotate(2deg); transform-origin: left top;}
+
+        /* Decorative Backgrounds */
+        .bg-grid-pattern { background-image: radial-gradient(#cbd5e1 1px, transparent 1px); background-size: 40px 40px; }
+        .bg-grid-pattern-dark { background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 40px 40px; }
+        
+        /* Glassmorphism */
+        .glass-pill { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.6); box-shadow: 0 10px 40px -10px rgba(0,0,0,0.08); }
+        .glass-pill.scrolled { background: rgba(255, 255, 255, 0.95); padding-top: 0.75rem; padding-bottom: 0.75rem; box-shadow: 0 15px 40px -10px rgba(0,0,0,0.15); width: 90% !important; max-width: 65rem !important;}
+        .glass-dark { background: rgba(3, 7, 18, 0.6); backdrop-filter: blur(24px); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.05);}
+        .glass-modal { background: rgba(3, 7, 18, 0.9); backdrop-filter: blur(30px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        
+        /* Accordion */
+        .accordion-item { border-bottom: 1px solid #e2e8f0; transition: all 0.4s ease; }
+        .accordion-button { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 2rem 0; cursor: none; background: transparent; border: none; outline: none; text-align: left; }
+        .accordion-content { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.6s ease; }
+        .accordion-content.open { grid-template-rows: 1fr; opacity: 1; padding-bottom: 2rem; }
+        .accordion-inner { overflow: hidden; }
+        .accordion-icon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border: 1px solid #cbd5e1; border-radius: 50%; transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); background: white; flex-shrink: 0; }
+        .accordion-item.active .accordion-icon { transform: rotate(135deg) scale(1.1); background: #be2546; color: white; border-color: #be2546; box-shadow: 0 10px 20px -5px rgba(190,37,70,0.4);}
+
+        /* SVG Cutouts */
+        .shape-divider-bottom { position: absolute; bottom: -1px; left: 0; width: 100%; overflow: hidden; line-height: 0; z-index: 20; transform: rotate(180deg); }
+        .shape-divider-bottom svg { position: relative; display: block; width: calc(100% + 1.3px); height: 80px; }
+        .shape-divider-top { position: absolute; top: -1px; left: 0; width: 100%; overflow: hidden; line-height: 0; z-index: 20; }
+        .shape-divider-top svg { position: relative; display: block; width: calc(100% + 1.3px); height: 80px; }
+
+        /* 3D Tilt Card */
+        .tilt-card { transform-style: preserve-3d; transform: perspective(1000px); }
+        .tilt-content { transform: translateZ(40px); }
+
+        /* Image Interactions */
+        .img-hover-zoom { overflow: hidden; border-radius: 2rem; transform: translateZ(0); }
+        .img-hover-zoom img { transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1); }
+        .img-hover-zoom:hover img { transform: scale(1.08); }
+
+        /* Button Fill Effect */
+        .btn-hover-fill { position: relative; overflow: hidden; z-index: 1; transition: color 0.4s ease; cursor: none;}
+        .btn-hover-fill::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #be2546; z-index: -1; transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1); transform-origin: left; transform: scaleX(0); }
+        .btn-hover-fill:hover::before { transform: scaleX(1); }
+        .btn-hover-fill:hover { color: white !important; border-color: #be2546 !important; }
+
+        /* Premium Marquee */
+        .marquee-container { overflow: hidden; white-space: nowrap; width: 100%; display: flex; padding: 0.85rem 0; border-bottom: 1px solid rgba(255,255,255,0.05);}
+        .marquee-content { display: flex; animation: marquee 35s linear infinite; }
+        .marquee-content:hover { animation-play-state: paused; }
+        .marquee-content span { margin: 0 3rem; font-size: 0.8rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; display: flex; align-items: center; gap: 0.75rem; color: rgba(255,255,255,0.8); }
+        
+        /* Floating Notice */
+        .floating-notice { position: fixed; top: 50%; left: 0; transform: translateY(-50%) rotate(-90deg); transform-origin: left top; z-index: 98; background: #be2546; color: white; padding: 12px 24px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: 0.75rem; border-radius: 0 0 12px 12px; box-shadow: 0 15px 30px rgba(190, 37, 70, 0.4); transition: margin-left 0.4s cubic-bezier(0.16, 1, 0.3, 1); cursor: none;}
+        .floating-notice:hover { margin-left: 8px; }
+
+        /* Typewriter Cursor */
+        .typed-cursor { opacity: 1; animation: blink 0.8s infinite; color: #be2546; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0; } 100% { opacity: 1; } }
+
+        /* Mobile Menu */
+        #mobile-menu { transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); transform: translateX(100%); }
+        #mobile-menu.open { transform: translateX(0); }
+        
+        .leader-line { flex-grow: 1; border-bottom: 2px dotted #cbd5e1; margin: 0 16px; position: relative; top: -6px;}
+        .leader-line-dark { flex-grow: 1; border-bottom: 2px dotted #334155; margin: 0 16px; position: relative; top: -6px;}
+        
+        /* Dark Mode */
+        .dark .bg-[#fafafa], .dark .bg-white, .dark .bg-slate-50 { @apply bg-brand-dark; }
+        .dark .text-slate-800, .dark .text-slate-900 { @apply text-white; }
+        .dark .text-slate-500, .dark .text-slate-600 { @apply text-slate-300; }
+        .dark .text-slate-700 { @apply text-slate-200; }
+        .dark .border-slate-100, .dark .border-slate-200 { @apply border-white/10; }
+        .dark .bg-slate-100 { @apply bg-white/5; }
+        .dark .shadow-sm { @apply shadow-white/5; }
+        .dark .glass-dark { @apply bg-brand-surface/80 backdrop-blur-xl border-white/20; }
+        
+        /* New Features */
+        .chat-bubble { @apply fixed bottom-24 right-6 w-16 h-16 bg-brand-600 text-white rounded-full shadow-glow hover:scale-110 flex items-center justify-center cursor-pointer z-[99] transition-all; }
+        .chat-open { @apply bottom-32 scale-100 opacity-100 translate-x-0; }
+        .stats-morph { @apply font-black text-6xl; }
+
+        /* Updated Nav Styles (Minimal Edge-to-Edge) */
+        #main-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 100;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        #nav-wrapper {
+            width: 100%;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        #navbar {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+            padding: 1rem 1.5rem;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            width: 100%;
+        }
+
+        #navbar.scrolled {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 0.75rem 1.5rem;
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+        }
+
+        .dark #navbar {
+            background: rgba(3, 7, 18, 0.8);
+            border-bottom-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .dark #navbar.scrolled {
+            background: rgba(3, 7, 18, 0.98);
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.6);
+        }
+
+        .nav-link {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 600;
+            font-size: 0.875rem;
+            letter-spacing: 0.02em;
+            color: #475569;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #be2546;
+            transition: width 0.3s ease;
+            border-radius: 2px;
+        }
+
+        .nav-link:hover {
+            color: #0f172a;
+        }
+
+        .nav-link:hover::after {
+            width: 1.25rem;
+        }
+
+        .dark .nav-link {
+            color: #94a3b8;
+        }
+
+        .dark .nav-link:hover {
+            color: #f8fafc;
+        }
+        
+        .dark .nav-link::after {
+            background-color: #e47188;
+        }
+    </style>
+</head>
+<body class="text-slate-800 selection:bg-brand-600 selection:text-white">
+
+    <div id="scroll-progress"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div id="videoModal" class="fixed inset-0 z-[100] flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-500 glass-modal p-4">
+        <div class="absolute inset-0 bg-noise z-0"></div>
+        <div class="relative z-10 w-full max-w-6xl aspect-video bg-black rounded-3xl overflow-hidden shadow-[0_0_100px_rgba(0,0,0,0.9)] transform scale-95 transition-all duration-700 ease-bounce-smooth" id="videoContainer">
+            <button id="closeVideoBtn" class="absolute top-6 right-6 z-20 text-white bg-white/10 backdrop-blur-xl border border-white/20 rounded-full p-3 hover:bg-brand-600 hover:border-brand-600 transition-all duration-300 cursor-interactive hover:scale-110">
+                <i class="ph ph-x text-2xl"></i>
+            </button>
+            <video id="campusVideo" controls class="w-full h-full object-cover">
+                <source src="https://cdn.coverr.co/videos/coverr-students-walking-in-the-university-campus-5219/1080p.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <a href="#" target="_blank" class="fixed bottom-8 right-8 z-[90] hidden md:flex items-center gap-3 bg-brand-600 text-white p-2.5 pr-7 rounded-full shadow-glow cursor-interactive hover:scale-105 transition-transform duration-300 group">
+        <div class="w-12 h-12 bg-white text-brand-600 rounded-full flex items-center justify-center relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-40"></span>
+            <i class="ph-fill ph-paper-plane-tilt text-2xl relative z-10 group-hover:rotate-12 transition-transform duration-300"></i>
+        </div>
+        <span class="font-bold text-sm tracking-widest uppercase">Apply 2026</span>
+    </a>
+
+    <a href="#" target="_blank" class="floating-notice md:hidden">Apply 2026</a>
+
+    <header id="main-header">
+        <div class="marquee-container hidden md:flex w-full bg-[#030712] shadow-lg border-b border-white/5 relative z-20">
+            <div class="marquee-content">
+                <span><i class="ph-fill ph-check-circle text-brand-500 text-xl"></i> AICTE Approved</span>
+                <span><i class="ph-fill ph-star text-brand-500 text-xl"></i> NAAC ‘A+’ Accredited</span>
+                <span><i class="ph-fill ph-bank text-brand-500 text-xl"></i> UGC Autonomous</span>
+                <span><i class="ph-fill ph-users text-brand-500 text-xl"></i> Exclusive 60 + 3 NRI Seats</span>
+                <span><i class="ph-fill ph-check-circle text-brand-500 text-xl"></i> AICTE Approved</span>
+                <span><i class="ph-fill ph-star text-brand-500 text-xl"></i> NAAC ‘A+’ Accredited</span>
+                <span><i class="ph-fill ph-bank text-brand-500 text-xl"></i> UGC Autonomous</span>
+                <span><i class="ph-fill ph-users text-brand-500 text-xl"></i> Exclusive 60 + 3 NRI Seats</span>
+            </div>
+        </div>
+
+        <div id="nav-wrapper">
+            <nav id="navbar">
+                <div class="flex justify-between items-center w-full max-w-[90rem] mx-auto px-2 md:px-6 lg:px-8">
+                    <a href="#" class="flex-shrink-0 flex items-center gap-3 cursor-interactive group pl-1">
+                        <img src="ajcelogo.png" onerror="this.onerror=null; this.src='ajcelogo.png';" alt="Amal Jyothi Logo" class="h-9 md:h-10 w-auto object-contain relative z-10 transition-transform duration-500 group-hover:scale-105 rounded-full">
+                        <div class="border-l-2 border-slate-200 dark:border-slate-700 pl-3 ml-1 flex flex-col justify-center">
+                            <span class="font-extrabold text-sm md:text-lg tracking-tight text-slate-900 dark:text-white leading-none mb-1 group-hover:text-brand-600 transition-colors">Amal Jyothi</span>
+                            <span class="text-[0.55rem] md:text-[0.65rem] font-bold text-brand-600 tracking-[0.2em] uppercase leading-none block mt-1">Business School</span>
+                        </div>
+                    </a>
+                    
+                    <div class="hidden lg:flex space-x-1 items-center">
+                        <a href="#overview" class="nav-link cursor-interactive">Overview</a>
+                        <a href="#legacy" class="nav-link cursor-interactive">Legacy</a>
+                        <a href="#pedagogy" class="nav-link cursor-interactive">Pedagogy</a>
+                        <a href="#exposure" class="nav-link cursor-interactive">Global Exposure</a>
+                        <a href="#fees" class="nav-link cursor-interactive">Fees</a>
+                    </div>
+
+                    <div class="hidden lg:flex items-center gap-5 pr-1">
+                        <button id="darkToggle" class="w-10 h-10 rounded-full flex items-center justify-center text-slate-500 hover:text-brand-600 bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:text-slate-400 dark:hover:text-white dark:hover:bg-white/20 transition-all cursor-interactive" title="Toggle Dark Mode">
+                            <i class="ph ph-sun text-lg"></i>
+                        </button>
+                        <a href="#" class="bg-brand-600 text-white px-7 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase hover:bg-slate-900 dark:hover:bg-white dark:hover:text-slate-900 transition-all duration-300 flex items-center gap-2 group cursor-interactive shadow-md hover:shadow-xl">
+                            <span>Apply '26 <i class="ph ph-arrow-right group-hover:translate-x-1 transition-transform inline-block"></i></span>
+                        </a>
+                    </div>
+                    
+                    <div class="lg:hidden flex items-center pr-1 gap-3">
+                        <button class="w-9 h-9 rounded-full flex items-center justify-center text-slate-500 hover:text-brand-600 bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:text-slate-400 dark:hover:text-white transition-all cursor-interactive" title="Toggle Dark Mode">
+                            <i class="ph ph-sun text-lg"></i>
+                        </button>
+                        <button id="mobile-menu-btn" class="w-9 h-9 rounded-full flex items-center justify-center text-slate-900 dark:text-white bg-slate-100 hover:bg-slate-200 dark:bg-white/10 dark:hover:bg-white/20 transition-all cursor-interactive focus:outline-none">
+                            <i class="ph ph-list text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-full max-w-sm bg-white z-[110] shadow-2xl flex flex-col pt-24 pb-8 px-8 lg:hidden overflow-y-auto">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-slate-900 p-2 hover:bg-slate-100 rounded-full transition cursor-interactive">
+            <i class="ph ph-x text-2xl"></i>
+        </button>
+        <div class="flex flex-col gap-6 mt-8">
+            <a href="#overview" class="mobile-link cursor-interactive text-xl font-extrabold text-slate-800 border-b border-slate-100 pb-4 hover:text-brand-600 transition-colors">Programme Overview</a>
+            <a href="#legacy" class="mobile-link cursor-interactive text-xl font-extrabold text-slate-800 border-b border-slate-100 pb-4 hover:text-brand-600 transition-colors">AJCE Legacy</a>
+            <a href="#pedagogy" class="mobile-link cursor-interactive text-xl font-extrabold text-slate-800 border-b border-slate-100 pb-4 hover:text-brand-600 transition-colors">Our Pedagogy</a>
+            <a href="#exposure" class="mobile-link cursor-interactive text-xl font-extrabold text-slate-800 border-b border-slate-100 pb-4 hover:text-brand-600 transition-colors">Global Exposure</a>
+            <a href="#fees" class="mobile-link cursor-interactive text-xl font-extrabold text-slate-800 border-b border-slate-100 pb-4 hover:text-brand-600 transition-colors">Fees Structure</a>
+        </div>
+        <div class="mt-auto pt-10">
+            <a href="#" class="w-full bg-brand-600 text-white text-center py-5 rounded-2xl font-bold text-lg shadow-glow flex justify-center items-center gap-3 cursor-interactive">
+                Submit Application <i class="ph ph-paper-plane-tilt text-xl"></i>
+            </a>
+        </div>
+    </div>
+
+    <section class="relative min-h-[100svh] flex items-center justify-center pt-40 md:pt-48 pb-24 bg-brand-dark overflow-hidden">
+        <div class="absolute inset-0 z-0 bg-noise"></div>
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[url('s1.jpg')] bg-cover bg-center bg-fixed gsap-parallax opacity-40"></div>
+            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9ImciIGN4PSI1MCUiIGN5PSI1MCUiIHI9IjUwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZSIgc3RvcC1vcGFjaXR5PSIwLjA1Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYmUyNTQ2IiBzdG9wLW9wYWNpdHk9IjAuMDUiLz48L3JhZGlhbEdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2cpIi8+PC9zdmc+')] opacity-20 mix-blend-overlay"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-[#030712]/95 via-[#030712]/60 to-[#030712]/95 z-10"></div>
+        </div>
+
+        <div class="absolute top-1/4 left-[5%] w-96 h-96 bg-brand-600/30 rounded-full blur-[120px] animate-float z-10"></div>
+        <div class="absolute bottom-1/4 right-[5%] w-[30rem] h-[30rem] bg-blue-600/20 rounded-full blur-[150px] animate-float-delayed z-10"></div>
+
+        <div class="relative z-20 max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-12 flex flex-col items-center text-center pb-20">
+            
+            <div class="hero-stagger inline-flex items-center gap-3 px-6 py-3 rounded-full glass-dark mb-10 shadow-2xl opacity-0 translate-y-8 backdrop-blur-3xl border border-white/10 hover:border-brand-500/50 transition-colors duration-500">
+                <span class="relative flex h-3 w-3">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-3 w-3 bg-brand-500"></span>
+                </span>
+                <span class="text-white/90 text-[0.75rem] sm:text-sm font-extrabold tracking-[0.2em] uppercase">Admissions Open 2026–2027</span>
+            </div>
+
+            <h1 class="hero-stagger text-5xl sm:text-6xl md:text-7xl lg:text-[7rem] font-black text-white leading-[1.05] tracking-tighter mb-8 text-balance drop-shadow-2xl opacity-0 translate-y-8">
+                Develop into <br class="hidden sm:block"> 
+                <span id="typed-text" class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 via-white to-slate-400 animate-gradient-x"></span><span class="typed-cursor">|</span>
+            </h1>
+
+            <p class="hero-stagger text-lg sm:text-xl md:text-2xl text-slate-300 font-medium max-w-3xl mb-14 leading-relaxed text-balance px-4 drop-shadow-lg opacity-0 translate-y-8">
+                Kerala's premier 100% residential BBA (Honours). Merging the analytical rigor of an IIM with the holistic discipline of a modern Gurukulam.
+            </p>
+
+            <div class="hero-stagger flex flex-col sm:flex-row gap-6 w-full sm:w-auto px-4 opacity-0 translate-y-8">
+                <a href="#" class="magnetic-btn bg-white text-slate-900 px-10 py-5 rounded-full font-extrabold text-lg hover:bg-brand-50 hover:text-brand-600 transition-all shadow-[0_0_40px_rgba(255,255,255,0.2)] flex items-center justify-center gap-3 w-full sm:w-auto cursor-interactive">
+                    <span>Secure Your Seat <i class="ph ph-arrow-up-right text-2xl inline-block"></i></span>
+                </a>
+                <button id="openVideoBtn" class="btn-hover-fill border border-white/20 text-white px-10 py-5 rounded-full font-extrabold text-lg transition-all flex items-center justify-center gap-4 w-full sm:w-auto backdrop-blur-xl cursor-interactive group bg-white/5 hover:bg-transparent">
+                    <div class="w-10 h-10 rounded-full bg-brand-600 flex items-center justify-center group-hover:bg-white group-hover:text-brand-600 transition-colors shadow-glow">
+                        <i class="ph-fill ph-play text-base"></i>
+                    </div>
+                    Watch Campus Tour
+                </button>
+            </div>
+        </div>
+
+        <div class="shape-divider-bottom z-20 pointer-events-none">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="fill-[#fafafa]"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="bg-[#fafafa] pb-24 relative z-30">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 relative z-30">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0 text-center bg-white py-12 px-6 rounded-[3rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.08)] border border-slate-100 -mt-24 relative mx-2 sm:mx-0 lg:divide-x divide-slate-100">
+                
+                <div class="gsap-reveal flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 bg-[#fdf2f4] rounded-[1rem] flex items-center justify-center mb-5 text-[#be2546] shadow-[inset_0_2px_4px_0_rgba(190,37,70,0.06)] transition-transform hover:scale-105 duration-300">
+                        <i class="ph-fill ph-medal text-3xl"></i>
+                    </div>
+                    <div class="text-[3.5rem] leading-none font-black text-slate-800 mb-2 flex items-baseline justify-center">
+                        <span class="counter" data-target="4">0</span><span class="text-2xl ml-1 text-slate-500 font-bold">Yrs</span>
+                    </div>
+                    <div class="text-[0.7rem] text-slate-500 font-bold tracking-[0.15em] uppercase">Honours Degree</div>
+                </div>
+                
+                <div class="gsap-reveal flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 bg-[#eff6ff] rounded-[1rem] flex items-center justify-center mb-5 text-[#2563eb] shadow-[inset_0_2px_4px_0_rgba(37,99,235,0.06)] transition-transform hover:scale-105 duration-300">
+                        <i class="ph-fill ph-buildings text-3xl"></i>
+                    </div>
+                    <div class="text-[3.5rem] leading-none font-black text-slate-800 mb-2 flex items-baseline justify-center">
+                        <span class="counter" data-target="100">0</span><span class="text-2xl ml-1 text-slate-500 font-bold">%</span>
+                    </div>
+                    <div class="text-[0.7rem] text-slate-500 font-bold tracking-[0.15em] uppercase">Residential Model</div>
+                </div>
+                
+                <div class="gsap-reveal flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 bg-[#ecfdf5] rounded-[1rem] flex items-center justify-center mb-5 text-[#059669] shadow-[inset_0_2px_4px_0_rgba(5,150,105,0.06)] transition-transform hover:scale-105 duration-300">
+                        <i class="ph-fill ph-users-three text-3xl"></i>
+                    </div>
+                    <div class="text-[3.5rem] leading-none font-black text-slate-800 mb-2 flex items-baseline justify-center">
+                        <span class="counter" data-target="63">0</span>
+                    </div>
+                    <div class="text-[0.7rem] text-slate-500 font-bold tracking-[0.15em] uppercase">Exclusive Intake</div>
+                </div>
+                
+                <div class="gsap-reveal flex flex-col items-center justify-center">
+                    <div class="w-16 h-16 bg-[#fffbeb] rounded-[1rem] flex items-center justify-center mb-5 text-[#d97706] shadow-[inset_0_2px_4px_0_rgba(217,119,6,0.06)] transition-transform hover:scale-105 duration-300">
+                        <i class="ph-fill ph-star text-3xl"></i>
+                    </div>
+                    <div class="text-[3.5rem] leading-none font-black text-slate-800 mb-2 flex items-baseline justify-center">
+                        A+
+                    </div>
+                    <div class="text-[0.7rem] text-slate-500 font-bold tracking-[0.15em] uppercase">NAAC Accredited</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="overview" class="scroll-mt-28 pb-24 md:pb-32 px-4 sm:px-6 lg:px-12 max-w-[90rem] mx-auto relative bg-[#fafafa]">
+        <div class="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start relative z-10">
+            <div class="lg:w-5/12 gsap-reveal">
+                <span class="text-brand-600 font-extrabold tracking-widest uppercase text-xs md:text-sm mb-5 block flex items-center gap-3">
+                    <div class="w-10 h-[3px] bg-brand-600 rounded-full"></div> Programme Overview
+                </span>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-[1.1] tracking-tight mb-10 mask-wrapper">
+                    <span class="mask-text">Beyond a</span>
+                    <span class="mask-text">conventional BBA.</span>
+                </h2>
+                
+                <div class="bg-gradient-to-br from-brand-50/50 to-white border border-brand-100 p-10 rounded-[2.5rem] mb-8 relative overflow-hidden shadow-soft group hover:shadow-card-hover transition-all duration-500 cursor-interactive transform hover:-translate-y-2">
+                    <div class="absolute -top-6 -right-6 p-4 opacity-[0.03] pointer-events-none group-hover:scale-110 group-hover:rotate-12 transition-all duration-700">
+                        <i class="ph-fill ph-certificate text-[14rem] text-brand-900"></i>
+                    </div>
+                    <div class="flex items-center gap-4 mb-6 relative z-10">
+                        <div class="w-14 h-14 rounded-2xl bg-brand-100 flex items-center justify-center text-brand-600 shadow-inner-soft">
+                            <i class="ph-fill ph-seal-check text-3xl"></i>
+                        </div>
+                        <h4 class="font-extrabold text-2xl text-brand-900">UGC Autonomous</h4>
+                    </div>
+                    <p class="text-base text-slate-600 leading-relaxed relative z-10 font-medium">
+                        Conferred Autonomous status by UGC for 10 years, ensuring an agile, globally updated, and industry-aligned curriculum without conventional university delays.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="lg:w-7/12 mt-4 lg:mt-0 pt-8 lg:pt-16 gsap-reveal">
+                <p class="text-xl md:text-2xl text-slate-700 leading-relaxed mb-8 font-semibold text-balance">
+                    The BBA (Honours) at Amal Jyothi Business School is not just a degree; it is a 4-year transformative leadership journey. 
+                </p>
+                <p class="text-lg text-slate-500 leading-relaxed mb-12 text-balance">
+                    We seamlessly merge the academic rigour inspired by top-tier institutions like the IITs and IIMs with the character-building essence of the traditional Gurukulam system. Being a NAAC 'A+' accredited and AICTE approved autonomous institution ensures that our academic delivery meets the highest national standards.
+                </p>
+                
+                <div class="p-10 bg-white rounded-[2.5rem] border border-slate-200 shadow-sm hover:shadow-float transition-all duration-500 cursor-interactive group">
+                    <div class="flex gap-6 items-start">
+                        <i class="ph-fill ph-quotes text-5xl text-brand-200 group-hover:text-brand-400 transition-colors"></i>
+                        <p class="text-slate-800 font-bold italic text-xl leading-relaxed pt-2">
+                            "An advanced undergraduate management programme designed to provide in-depth academic knowledge, rigorous research orientation, and extensive practical exposure."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="legacy" class="py-32 bg-[#020617] relative overflow-hidden z-20 border-t border-white/5">
+        <div class="absolute inset-0 bg-noise"></div>
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-900/20 rounded-full blur-[150px] pointer-events-none transform translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[150px] pointer-events-none transform -translate-x-1/2 translate-y-1/2"></div>
+
+        <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+            
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 gsap-reveal">
+                <div class="max-w-2xl">
+                    <span class="text-brand-500 font-bold tracking-widest uppercase text-sm mb-5 block flex items-center gap-3">
+                        <div class="w-10 h-[2px] bg-brand-500"></div> The Foundation
+                    </span>
+                    <h2 class="text-4xl md:text-6xl font-black text-white tracking-tight mask-wrapper">
+                        <span class="mask-text text-white">Rooted in</span>
+                        <span class="mask-text text-white">Engineering Excellence.</span>
+                    </h2>
+                </div>
+                <div class="max-w-md pb-2">
+                    <p class="text-lg text-slate-400 font-medium leading-relaxed">
+                        Since 2001, Amal Jyothi College of Engineering has been Kerala's benchmark for technical education. Now, we bring that exact DNA of rigor and innovation to Business Education.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative pb-10">
+                
+                <div class="lg:col-span-2 gsap-stagger cursor-interactive group perspective-1000 h-[450px]">
+                    <div class="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 group-hover:border-white/20 transition-colors duration-500">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1200&q=80" alt="Campus" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-expo group-hover:scale-[1.05] opacity-80">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-8 md:p-10 w-full">
+                            <div class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full w-max mb-5">
+                                <span class="text-white font-bold tracking-widest uppercase text-[0.65rem]">Est. 2001</span>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-black text-white mb-3 drop-shadow-lg">The Genesis</h3>
+                            <p class="text-slate-200 text-base md:text-lg font-medium max-w-xl transition-all duration-500">Established as a premier engineering institution, setting the gold standard for infrastructure and academic discipline.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-1 gsap-stagger cursor-interactive group perspective-1000 h-[450px]">
+                    <div class="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 group-hover:border-brand-500/50 transition-colors duration-500">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Accreditation" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-expo group-hover:scale-[1.05] opacity-80">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-brand-900/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-8 md:p-10 w-full">
+                            <div class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full w-max mb-5">
+                                <span class="text-white font-bold tracking-widest uppercase text-[0.65rem]">Accreditations</span>
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-black text-white mb-3 drop-shadow-lg">NAAC A+ & NBA</h3>
+                            <p class="text-brand-100 text-sm md:text-base font-medium transition-all duration-500">Consistently recognized by national boards for unparalleled quality in technical education.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-1 gsap-stagger cursor-interactive group perspective-1000 h-[450px]">
+                    <div class="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl border border-white/10 group-hover:border-blue-500/50 transition-colors duration-500">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Innovation" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-expo group-hover:scale-[1.05] opacity-80">
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 via-blue-900/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-8 md:p-10 w-full">
+                            <div class="bg-white/10 backdrop-blur-md border border-white/20 px-4 py-1.5 rounded-full w-max mb-5">
+                                <span class="text-white font-bold tracking-widest uppercase text-[0.65rem]">Ecosystem</span>
+                            </div>
+                            <h3 class="text-2xl md:text-3xl font-black text-white mb-3 drop-shadow-lg">Innovation Hub</h3>
+                            <p class="text-blue-100 text-sm md:text-base font-medium transition-all duration-500">Home to cutting-edge incubation centers and India's top TBI, fostering startups.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 gsap-stagger cursor-interactive group perspective-1000 h-[450px]">
+                    <div class="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl border border-brand-500/30 group-hover:border-brand-500/70 transition-colors duration-500">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="BBA Launch" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] ease-expo group-hover:scale-[1.05] opacity-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/40 to-transparent"></div>
+                        
+                        <div class="absolute bottom-0 left-0 p-8 md:p-10 w-full">
+                            <div class="bg-brand-600 border border-brand-400 px-4 py-1.5 rounded-full w-max mb-5 shadow-glow">
+                                <span class="text-white font-bold tracking-widest uppercase text-[0.65rem]">2026 Cohort</span>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-black text-white mb-3 drop-shadow-lg">AJBS Genesis</h3>
+                            <p class="text-slate-200 text-base md:text-lg font-medium max-w-xl transition-all duration-500">The launch of the elite BBA (Honours) program, designed to create the next generation of global corporate leaders.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 bg-white relative overflow-hidden bg-grid-pattern">
+        <div class="absolute inset-0 bg-gradient-to-b from-white/50 to-white z-0"></div>
+        <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+            
+            <div class="text-center mb-20">
+                <span class="text-brand-600 font-extrabold tracking-widest uppercase text-sm mb-5 block gsap-reveal">Who is this for?</span>
+                <h2 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tight mb-6 mask-wrapper"><span class="mask-text">The Ideal Profile.</span></h2>
+                <p class="text-xl text-slate-500 max-w-2xl mx-auto font-medium gsap-reveal">Designed for ambitious minds ready to transcend traditional education.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
+                <div class="tilt-card bg-white p-12 rounded-[2.5rem] border border-slate-200 shadow-float cursor-interactive hover:border-brand-300 transition-colors duration-300">
+                    <div class="tilt-content flex flex-col h-full">
+                        <div class="w-16 h-16 bg-brand-50 rounded-2xl flex items-center justify-center mb-8 border border-brand-100 shadow-inner-soft">
+                            <i class="ph-fill ph-lightbulb text-4xl text-brand-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold mb-4 text-slate-900">Future Entrepreneurs</h3>
+                        <p class="text-slate-600 leading-relaxed font-medium text-lg">For those who want to build and scale businesses. Gain the analytical toolkit and network to launch your own venture.</p>
+                    </div>
+                </div>
+                <div class="tilt-card bg-white p-12 rounded-[2.5rem] border border-slate-200 shadow-float cursor-interactive hover:border-blue-300 transition-colors duration-300">
+                    <div class="tilt-content flex flex-col h-full">
+                        <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center mb-8 border border-blue-100 shadow-inner-soft">
+                            <i class="ph-fill ph-briefcase text-4xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold mb-4 text-slate-900">Corporate Leaders</h3>
+                        <p class="text-slate-600 leading-relaxed font-medium text-lg">Aiming for top-tier MNCs or Big 4 Consulting. Develop the sharp problem-solving skills required for high-stakes environments.</p>
+                    </div>
+                </div>
+                <div class="tilt-card bg-white p-12 rounded-[2.5rem] border border-slate-200 shadow-float cursor-interactive hover:border-green-300 transition-colors duration-300">
+                    <div class="tilt-content flex flex-col h-full">
+                        <div class="w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center mb-8 border border-emerald-100 shadow-inner-soft">
+                            <i class="ph-fill ph-student text-4xl text-emerald-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-extrabold mb-4 text-slate-900">Higher Ed Aspirants</h3>
+                        <p class="text-slate-600 leading-relaxed font-medium text-lg">Planning for an MBA from IIMs or Ivy League colleges. Our curriculum embeds dedicated entrance prep from Day 1.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pedagogy" class="scroll-mt-28 py-32 bg-slate-50 relative overflow-hidden border-t border-slate-200">
+        <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+            <div class="text-center mb-32">
+                <span class="text-brand-600 font-extrabold tracking-widest uppercase text-sm mb-5 block gsap-reveal">Our Methodology</span>
+                <h2 class="text-4xl md:text-5xl lg:text-7xl font-black text-slate-900 tracking-tight mask-wrapper"><span class="mask-text">The 14-Hour Advantage</span></h2>
+                <p class="mt-8 text-xl text-slate-500 max-w-3xl mx-auto font-medium gsap-reveal">Ensuring a balanced development of academic competence, professional skills, and personal growth from dawn till dusk.</p>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto">
+                <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-2 bg-slate-200 md:-translate-x-1/2 rounded-full overflow-hidden z-0">
+                    <div id="timeline-line" class="w-full bg-gradient-to-b from-brand-400 to-brand-700 h-0 transition-all duration-300 ease-out shadow-[0_0_15px_rgba(190,37,70,0.5)]"></div>
+                </div>
+
+                <div class="space-y-20 relative z-10">
+                    
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 scroll-timeline-item cursor-interactive group">
+                        <div class="md:w-1/2 text-left md:text-right pl-24 md:pl-0 pr-0 md:pr-16 transition-transform duration-500 group-hover:-translate-x-4">
+                            <h3 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900">Morning Phase</h3>
+                            <p class="text-slate-600 leading-relaxed text-lg md:text-xl font-medium">Dedicated entirely to conceptual academic sessions and rigorous core subject learning.</p>
+                        </div>
+                        <div class="absolute left-8 md:left-1/2 w-16 h-16 bg-white border-4 border-slate-200 text-slate-400 rounded-full flex items-center justify-center -translate-x-1/2 shadow-xl z-10 timeline-dot transition-all duration-500 group-hover:scale-110">
+                            <i class="ph-fill ph-sun-horizon text-3xl"></i>
+                        </div>
+                        <div class="md:w-1/2 hidden md:block pl-16 opacity-0">Spacer</div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-16 scroll-timeline-item cursor-interactive group">
+                        <div class="md:w-1/2 text-left pl-24 md:pl-16 pr-0 md:pr-0 transition-transform duration-500 group-hover:translate-x-4">
+                            <h3 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900">Afternoon Phase</h3>
+                            <p class="text-slate-600 leading-relaxed text-lg md:text-xl font-medium">Focused on skill development, technical awareness, and hands-on application-oriented training.</p>
+                        </div>
+                        <div class="absolute left-8 md:left-1/2 w-16 h-16 bg-white border-4 border-slate-200 text-slate-400 rounded-full flex items-center justify-center -translate-x-1/2 shadow-xl z-10 timeline-dot transition-all duration-500 group-hover:scale-110">
+                            <i class="ph-fill ph-laptop text-3xl"></i>
+                        </div>
+                        <div class="md:w-1/2 hidden md:block pr-16 opacity-0">Spacer</div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16 scroll-timeline-item cursor-interactive group">
+                        <div class="md:w-1/2 text-left md:text-right pl-24 md:pl-0 pr-0 md:pr-16 transition-transform duration-500 group-hover:-translate-x-4">
+                            <h3 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900">Evening Phase</h3>
+                            <p class="text-slate-600 leading-relaxed text-lg md:text-xl font-medium">Mandatory sports, physical development activities, arts, and holistic wellness programs.</p>
+                        </div>
+                        <div class="absolute left-8 md:left-1/2 w-16 h-16 bg-white border-4 border-slate-200 text-slate-400 rounded-full flex items-center justify-center -translate-x-1/2 shadow-xl z-10 timeline-dot transition-all duration-500 group-hover:scale-110">
+                            <i class="ph-fill ph-person-simple-run text-3xl"></i>
+                        </div>
+                        <div class="md:w-1/2 hidden md:block pl-16 opacity-0">Spacer</div>
+                    </div>
+
+                    <div class="flex flex-col md:flex-row-reverse items-center justify-between gap-8 md:gap-16 scroll-timeline-item cursor-interactive group">
+                        <div class="md:w-1/2 text-left pl-24 md:pl-16 pr-0 md:pr-0 transition-transform duration-500 group-hover:translate-x-4">
+                            <h3 class="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900">Late Sessions</h3>
+                            <p class="text-slate-600 leading-relaxed text-lg md:text-xl font-medium">Industry interactions, deep case discussions, and structured collaborative peer learning.</p>
+                        </div>
+                        <div class="absolute left-8 md:left-1/2 w-16 h-16 bg-white border-4 border-slate-200 text-slate-400 rounded-full flex items-center justify-center -translate-x-1/2 shadow-xl z-10 timeline-dot transition-all duration-500 group-hover:scale-110">
+                            <i class="ph-fill ph-users-three text-3xl"></i>
+                        </div>
+                        <div class="md:w-1/2 hidden md:block pr-16 opacity-0">Spacer</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="exposure" class="bg-[#030712] relative border-y border-white/5 flex flex-col">
+        <div class="absolute top-0 left-0 w-full z-20 pt-24 pb-12 pointer-events-none text-center">
+             <span class="text-brand-400 font-extrabold tracking-widest uppercase text-sm mb-4 block drop-shadow-md">Beyond Borders</span>
+             <h2 class="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-white drop-shadow-xl">Experiential Global Learning</h2>
+        </div>
+
+        <div class="relative min-h-[85vh] md:min-h-screen flex items-center justify-center exposure-section overflow-hidden cursor-interactive">
+            <div class="absolute inset-0 z-0 bg-[#030712]">
+                <img src="Kerala.png" loading="lazy" alt="Kerala" class="w-full h-full object-cover opacity-70">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#030712] via-[#030712]/30 to-[#030712]"></div>
+            </div>
+            <div class="relative z-10 max-w-5xl mx-auto px-6 text-center exposure-content pt-32">
+                <div class="inline-block bg-brand-500/20 text-brand-400 text-xs font-bold px-5 py-2.5 rounded-full tracking-widest uppercase mb-6 border border-brand-500/30 backdrop-blur-md">Year 1</div>
+                <h3 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight drop-shadow-lg">Kerala Immersion</h3>
+                <p class="text-slate-300 text-xl md:text-2xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md">Deep regional business exposure. Engage with foundational local market dynamics, MSMEs, and traditional operational structures unique to the region.</p>
+            </div>
+        </div>
+
+        <div class="relative min-h-[85vh] md:min-h-screen flex items-center justify-center exposure-section overflow-hidden cursor-interactive">
+            <div class="absolute inset-0 z-0 bg-[#030712]">
+                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1600&q=80" loading="lazy" alt="India" class="w-full h-full object-cover opacity-70">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#030712] via-[#030712]/30 to-[#030712]"></div>
+            </div>
+            <div class="relative z-10 max-w-5xl mx-auto px-6 text-center exposure-content pt-32">
+                <div class="inline-block bg-blue-500/20 text-blue-400 text-xs font-bold px-5 py-2.5 rounded-full tracking-widest uppercase mb-6 border border-blue-500/30 backdrop-blur-md">Year 1 & 2</div>
+                <h3 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight drop-shadow-lg">Bharat Darshan</h3>
+                <p class="text-slate-300 text-xl md:text-2xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md">Broadening the horizon with national perspectives. Experience comprehensive rural market immersion and massive supply chains across India.</p>
+            </div>
+        </div>
+
+        <div class="relative min-h-[85vh] md:min-h-screen flex items-center justify-center exposure-section overflow-hidden cursor-interactive">
+            <div class="absolute inset-0 z-0 bg-[#030712]">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1600&q=80" loading="lazy" alt="Middle East" class="w-full h-full object-cover opacity-70">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#030712] via-[#030712]/30 to-[#030712]"></div>
+            </div>
+            <div class="relative z-10 max-w-5xl mx-auto px-6 text-center exposure-content pt-32">
+                <div class="inline-block bg-emerald-500/20 text-emerald-400 text-xs font-bold px-5 py-2.5 rounded-full tracking-widest uppercase mb-6 border border-emerald-500/30 backdrop-blur-md">Year 2</div>
+                <h3 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight drop-shadow-lg">Middle East Connect</h3>
+                <p class="text-slate-300 text-xl md:text-2xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md">Initial international market exposure focusing on global trade, mega-infrastructure projects, and rapidly emerging global economies.</p>
+            </div>
+        </div>
+
+        <div class="relative min-h-[85vh] md:min-h-screen flex items-center justify-center exposure-section overflow-hidden cursor-interactive">
+            <div class="absolute inset-0 z-0 bg-[#030712]">
+                <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1600&q=80" loading="lazy" alt="Europe" class="w-full h-full object-cover opacity-70">
+                <div class="absolute inset-0 bg-gradient-to-b from-[#030712] via-[#030712]/30 to-[#030712]"></div>
+            </div>
+            <div class="relative z-10 max-w-5xl mx-auto px-6 text-center exposure-content pt-32">
+                <div class="inline-block bg-amber-500/20 text-amber-400 text-xs font-bold px-5 py-2.5 rounded-full tracking-widest uppercase mb-6 border border-amber-500/30 backdrop-blur-md">Year 3 & 4</div>
+                <h3 class="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight drop-shadow-lg">European Exchange</h3>
+                <p class="text-slate-300 text-xl md:text-2xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md">Advanced academic and industry interaction on a sophisticated, global scale. Connect with heritage brands and modern conglomerates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" class="scroll-mt-28 py-24 md:py-32 px-4 sm:px-6 lg:px-12 max-w-[65rem] mx-auto relative bg-fafafa">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+            <div>
+                <h2 class="text-4xl md:text-6xl font-black text-slate-900 tracking-tight mb-4 mask-wrapper"><span class="mask-text">Programme Details</span></h2>
+                <p class="text-xl text-slate-500 font-medium gsap-reveal">Dive into the comprehensive 4-year academic structure.</p>
+            </div>
+            <a href="https://forms.gle/8ciT1QfWcRUw5LpQ6\" target="_blank" class="bg-brand-600 text-white px-8 py-4 rounded-full text-sm font-bold hover:bg-slate-900 transition-colors flex items-center shrink-0 shadow-lg shadow-brand-600/30 cursor-interactive gsap-reveal">
+                Request Full Syllabus <i class="ph ph-download-simple ml-2 text-lg"></i>
+            </a>
+        </div>
+
+        <div class="space-y-4 border-t border-gray-200 pt-8 gsap-reveal">
+            
+            <div class="accordion-item bg-white rounded-3xl px-8 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                <button class="accordion-button group cursor-interactive" onclick="toggleAccordion(this)">
+                    <span class="text-xl md:text-3xl font-black text-slate-900 group-hover:text-brand-600 transition-colors flex items-center gap-6">
+                        <span class="text-sm font-black text-slate-300 group-hover:text-brand-200 transition-colors">01</span> Core Areas of Study
+                    </span>
+                    <div class="accordion-icon group-hover:border-brand-600 shadow-sm">
+                        <i class="ph ph-plus text-2xl transition-transform"></i>
+                    </div>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner pb-8">
+                        <div class="grid md:grid-cols-2 gap-6 text-lg text-slate-600 font-medium pl-6 border-l-4 border-brand-200 bg-slate-50 p-8 rounded-2xl">
+                            <ul class="space-y-5 list-none">
+                                <li class="flex items-start gap-4"><i class="ph-fill ph-check-circle text-brand-500 mt-1 text-xl"></i> Financial Accounting & Management</li>
+                                <li class="flex items-start gap-4"><i class="ph-fill ph-check-circle text-brand-500 mt-1 text-xl"></i> Marketing Management</li>
+                                <li class="flex items-start gap-4"><i class="ph-fill ph-check-circle text-brand-500 mt-1 text-xl"></i> Human Resource Management</li>
+                            </ul>
+                            <ul class="space-y-5 list-none">
+                                <li class="flex items-start gap-4"><i class="ph-fill ph-check-circle text-brand-500 mt-1 text-xl"></i> Business Strategy & Analytics</li>
+                                <li class="flex items-start gap-4"><i class="ph-fill ph-check-circle text-brand-500 mt-1 text-xl"></i> Tech Fundamentals</li>
+                                <li class="flex items-start gap-4"><i class="ph-fill ph-check-circle text-brand-500 mt-1 text-xl"></i> AI Awareness for Business</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-white rounded-3xl px-8 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                <button class="accordion-button group cursor-interactive" onclick="toggleAccordion(this)">
+                    <span class="text-xl md:text-3xl font-black text-slate-900 group-hover:text-brand-600 transition-colors flex items-center gap-6">
+                        <span class="text-sm font-black text-slate-300 group-hover:text-brand-200 transition-colors">02</span> Skill Enhancement
+                    </span>
+                    <div class="accordion-icon group-hover:border-brand-600 shadow-sm">
+                        <i class="ph ph-plus text-2xl transition-transform"></i>
+                    </div>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner pb-8">
+                        <div class="pl-6 border-l-4 border-brand-200 bg-slate-50 p-8 rounded-2xl">
+                            <p class="text-lg text-slate-600 leading-relaxed mb-8 font-medium">
+                                We employ strict case-based and experiential learning methodologies instead of rote memorization.
+                            </p>
+                            <div class="flex flex-wrap gap-4 text-base font-bold text-slate-700">
+                                <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full flex items-center gap-3 shadow-sm"><i class="ph-fill ph-chats-circle text-brand-500 text-xl"></i> Communication</span>
+                                <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full flex items-center gap-3 shadow-sm"><i class="ph-fill ph-users-three text-brand-500 text-xl"></i> Leadership</span>
+                                <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full flex items-center gap-3 shadow-sm"><i class="ph-fill ph-brain text-brand-500 text-xl"></i> Decision-making</span>
+                                <span class="bg-white border border-slate-200 px-5 py-2.5 rounded-full flex items-center gap-3 shadow-sm"><i class="ph-fill ph-handshake text-brand-500 text-xl"></i> Corporate Ethics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item bg-white rounded-3xl px-8 shadow-sm hover:shadow-md transition-shadow border border-slate-100">
+                <button class="accordion-button group cursor-interactive" onclick="toggleAccordion(this)">
+                    <span class="text-xl md:text-3xl font-black text-slate-900 group-hover:text-brand-600 transition-colors flex items-center gap-6">
+                        <span class="text-sm font-black text-slate-300 group-hover:text-brand-200 transition-colors">03</span> Mandatory Internships
+                    </span>
+                    <div class="accordion-icon group-hover:border-brand-600 shadow-sm">
+                        <i class="ph ph-plus text-2xl transition-transform"></i>
+                    </div>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-inner pb-8">
+                        <div class="pl-6 border-l-4 border-brand-200 bg-slate-50 p-8 rounded-2xl">
+                            <p class="text-lg text-slate-600 leading-relaxed font-medium">
+                                Structured summer internships are <strong class="text-brand-700">mandatory every year</strong>. Unlike traditional programs, our focus is strictly on continuous practical industry exposure, allowing students to build a robust CV and gain immense career clarity before graduation.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="partners" class="scroll-mt-28 py-32 md:py-40 bg-[#030712] relative overflow-hidden z-10 border-y border-white/5">
+        
+        <div class="absolute inset-0 bg-noise z-0"></div>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] bg-brand-900/10 rounded-full blur-[200px] pointer-events-none"></div>
+
+        <div class="absolute top-[20%] left-0 w-full overflow-hidden whitespace-nowrap opacity-[0.03] pointer-events-none -z-10 transform -rotate-2">
+            <h2 class="text-[12rem] md:text-[20rem] font-black text-transparent stroke-text animate-marquee-fast cursor-default leading-none">
+                GLOBAL NETWORK • INDUSTRY ACCREDITED • TOP RECRUITERS • GLOBAL NETWORK •
+            </h2>
+        </div>
+        
+        <div class="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+            
+            <div class="text-center mb-20 md:mb-32 gsap-reveal">
+                <span class="text-brand-500 font-extrabold tracking-widest uppercase text-sm mb-5 block">The Ecosystem</span>
+                <h2 class="text-5xl md:text-7xl font-black text-white tracking-tight mask-wrapper"><span class="mask-text text-white">Industry Tie-ups</span></h2>
+                <p class="mt-8 text-xl text-slate-400 max-w-3xl mx-auto font-medium">An unparalleled ecosystem of global tech, automotive, and IT giants providing authentic, practical industry exposure.</p>
+            </div>
+
+            <div class="relative w-full -mx-4 px-4 flex flex-col gap-24 md:gap-32 pb-24 mt-16">
+                
+                <div class="scroll-move-left flex gap-12 md:gap-16 w-max pl-[5vw]">
+
+                    <div class="relative w-[360px] md:w-[500px] h-[420px] md:h-[500px] shrink-0 group cursor-interactive mt-20 md:mt-32">
+                        <div class="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-3xl rounded-[3rem] border border-white/10 group-hover:border-brand-500/50 transition-all duration-700 overflow-hidden flex flex-col p-10 shadow-2xl group-hover:shadow-[0_0_60px_rgba(190,37,70,0.2)]">
+                            <div class="absolute inset-0 bg-noise opacity-30"></div>
+                            <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-brand-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                            
+                            <div class="mt-auto relative z-10">
+                                <div class="w-16 h-16 rounded-[1.25rem] bg-gradient-to-br from-brand-500/20 to-brand-500/5 flex items-center justify-center border border-brand-500/30 mb-8 group-hover:scale-110 transition-transform duration-500 origin-left shadow-glow">
+                                    <i class="ph-fill ph-cloud-network text-4xl text-brand-400"></i>
+                                </div>
+                                <span class="text-brand-400 font-extrabold text-[11px] md:text-sm tracking-widest uppercase mb-3 block">Cloud Architecture</span>
+                                <h3 class="text-2xl md:text-4xl font-black text-white leading-tight">Enterprise Cloud</h3>
+                                <div class="max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100 transition-all duration-700 ease-in-out overflow-hidden mt-0 group-hover:mt-4">
+                                    <p class="text-sm md:text-base text-slate-400 leading-relaxed font-medium">Direct exposure to scalable enterprise cloud architecture and modern infrastructure management.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="AWS Servers" class="absolute -top-20 md:-top-28 right-6 md:right-8 w-48 h-48 md:w-72 md:h-72 object-cover rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 transform rotate-6 group-hover:rotate-0 group-hover:scale-[1.08] group-hover:-translate-y-6 transition-all duration-[800ms] ease-bounce-smooth z-20">
+                    </div>
+
+                    <div class="relative w-[360px] md:w-[500px] h-[420px] md:h-[500px] shrink-0 group cursor-interactive mt-20 md:mt-32">
+                        <div class="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-3xl rounded-[3rem] border border-white/10 group-hover:border-blue-500/50 transition-all duration-700 overflow-hidden flex flex-col p-10 shadow-2xl group-hover:shadow-[0_0_60px_rgba(59,130,246,0.2)]">
+                            <div class="absolute inset-0 bg-noise opacity-30"></div>
+                            <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-blue-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                            
+                            <div class="mt-auto relative z-10">
+                                <div class="w-16 h-16 rounded-[1.25rem] bg-gradient-to-br from-blue-500/20 to-blue-500/5 flex items-center justify-center border border-blue-500/30 mb-8 group-hover:scale-110 transition-transform duration-500 origin-left shadow-[0_0_30px_rgba(59,130,246,0.4)]">
+                                    <i class="ph-fill ph-google-logo text-4xl text-blue-400"></i>
+                                </div>
+                                <span class="text-blue-400 font-extrabold text-[11px] md:text-sm tracking-widest uppercase mb-3 block">Tech Ecosystem</span>
+                                <h3 class="text-2xl md:text-4xl font-black text-white leading-tight">Tech Integration</h3>
+                                <div class="max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100 transition-all duration-700 ease-in-out overflow-hidden mt-0 group-hover:mt-4">
+                                    <p class="text-sm md:text-base text-slate-400 leading-relaxed font-medium">Mastering data analytics, machine learning, and advanced enterprise workspace deployment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80" alt="Tech Interaction" class="absolute -top-20 md:-top-28 right-6 md:right-8 w-48 h-48 md:w-72 md:h-72 object-cover rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 transform -rotate-6 group-hover:rotate-0 group-hover:scale-[1.08] group-hover:-translate-y-6 transition-all duration-[800ms] ease-bounce-smooth z-20">
+                    </div>
+
+                    <div class="relative w-[360px] md:w-[500px] h-[420px] md:h-[500px] shrink-0 group cursor-interactive mt-20 md:mt-32">
+                        <div class="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-3xl rounded-[3rem] border border-white/10 group-hover:border-rose-500/50 transition-all duration-700 overflow-hidden flex flex-col p-10 shadow-2xl group-hover:shadow-[0_0_60px_rgba(244,63,94,0.2)]">
+                            <div class="absolute inset-0 bg-noise opacity-30"></div>
+                            <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-rose-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                            
+                            <div class="mt-auto relative z-10">
+                                <div class="w-16 h-16 rounded-[1.25rem] bg-gradient-to-br from-rose-500/20 to-rose-500/5 flex items-center justify-center border border-rose-500/30 mb-8 group-hover:scale-110 transition-transform duration-500 origin-left shadow-[0_0_30px_rgba(244,63,94,0.4)]">
+                                    <i class="ph-fill ph-factory text-4xl text-rose-400"></i>
+                                </div>
+                                <span class="text-rose-400 font-extrabold text-[11px] md:text-sm tracking-widest uppercase mb-3 block">Manufacturing</span>
+                                <h3 class="text-2xl md:text-4xl font-black text-white leading-tight">Operations Dynamics</h3>
+                                <div class="max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100 transition-all duration-700 ease-in-out overflow-hidden mt-0 group-hover:mt-4">
+                                    <p class="text-sm md:text-base text-slate-400 leading-relaxed font-medium">Hands-on operations, automation dynamics, and international supply chain management.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Factory Arm" class="absolute -top-20 md:-top-28 right-6 md:right-8 w-48 h-48 md:w-72 md:h-72 object-cover rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 transform rotate-12 group-hover:rotate-0 group-hover:scale-[1.08] group-hover:-translate-y-6 transition-all duration-[800ms] ease-bounce-smooth z-20">
+                    </div>
+
+                    <div class="relative w-[360px] md:w-[500px] h-[420px] md:h-[500px] shrink-0 group cursor-interactive mt-20 md:mt-32">
+                        <div class="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-3xl rounded-[3rem] border border-white/10 group-hover:border-red-600/50 transition-all duration-700 overflow-hidden flex flex-col p-10 shadow-2xl group-hover:shadow-[0_0_60px_rgba(220,38,38,0.2)]">
+                            <div class="absolute inset-0 bg-noise opacity-30"></div>
+                            <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                            
+                            <div class="mt-auto relative z-10">
+                                <div class="w-16 h-16 rounded-[1.25rem] bg-gradient-to-br from-red-500/20 to-red-500/5 flex items-center justify-center border border-red-500/30 mb-8 group-hover:scale-110 transition-transform duration-500 origin-left shadow-[0_0_30px_rgba(220,38,38,0.4)]">
+                                    <i class="ph-fill ph-linux-logo text-4xl text-red-500"></i>
+                                </div>
+                                <span class="text-red-500 font-extrabold text-[11px] md:text-sm tracking-widest uppercase mb-3 block">Open Source</span>
+                                <h3 class="text-2xl md:text-4xl font-black text-white leading-tight">Enterprise Systems</h3>
+                                <div class="max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100 transition-all duration-700 ease-in-out overflow-hidden mt-0 group-hover:mt-4">
+                                    <p class="text-sm md:text-base text-slate-400 leading-relaxed font-medium">Foundational training in Enterprise IT architecture and open-source system security.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Code Matrix" class="absolute -top-20 md:-top-28 right-6 md:right-8 w-48 h-48 md:w-72 md:h-72 object-cover rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 transform -rotate-3 group-hover:rotate-0 group-hover:scale-[1.08] group-hover:-translate-y-6 transition-all duration-[800ms] ease-bounce-smooth z-20">
+                    </div>
+
+                    <div class="relative w-[360px] md:w-[500px] h-[420px] md:h-[500px] shrink-0 group cursor-interactive mt-20 md:mt-32">
+                        <div class="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-3xl rounded-[3rem] border border-white/10 group-hover:border-orange-500/50 transition-all duration-700 overflow-hidden flex flex-col p-10 shadow-2xl group-hover:shadow-[0_0_60px_rgba(249,115,22,0.2)]">
+                            <div class="absolute inset-0 bg-noise opacity-30"></div>
+                            <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-orange-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                            
+                            <div class="mt-auto relative z-10">
+                                <div class="w-16 h-16 rounded-[1.25rem] bg-gradient-to-br from-orange-500/20 to-orange-500/5 flex items-center justify-center border border-orange-500/30 mb-8 group-hover:scale-110 transition-transform duration-500 origin-left shadow-[0_0_30px_rgba(249,115,22,0.4)]">
+                                    <i class="ph-fill ph-database text-4xl text-orange-400"></i>
+                                </div>
+                                <span class="text-orange-400 font-extrabold text-[11px] md:text-sm tracking-widest uppercase mb-3 block">Database Systems</span>
+                                <h3 class="text-2xl md:text-4xl font-black text-white leading-tight">ERP & Databases</h3>
+                                <div class="max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100 transition-all duration-700 ease-in-out overflow-hidden mt-0 group-hover:mt-4">
+                                    <p class="text-sm md:text-base text-slate-400 leading-relaxed font-medium">Comprehensive Enterprise Resource Planning (ERP) and complex database administration.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Server Datacenter" class="absolute -top-20 md:-top-28 right-6 md:right-8 w-48 h-48 md:w-72 md:h-72 object-cover rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 transform rotate-6 group-hover:rotate-0 group-hover:scale-[1.08] group-hover:-translate-y-6 transition-all duration-[800ms] ease-bounce-smooth z-20">
+                    </div>
+                </div>
+
+                <div class="scroll-move-right flex gap-12 md:gap-16 w-max ml-[-80vw] md:ml-[-50vw]">
+
+                    <div class="relative w-[360px] md:w-[500px] h-[420px] md:h-[500px] shrink-0 group cursor-interactive mt-20 md:mt-32">
+                        <div class="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-3xl rounded-[3rem] border border-white/10 group-hover:border-amber-500/50 transition-all duration-700 overflow-hidden flex flex-col p-10 shadow-2xl group-hover:shadow-[0_0_60px_rgba(245,158,11,0.2)]">
+                            <div class="absolute inset-0 bg-noise opacity-30"></div>
+                            <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                            
+                            <div class="mt-auto relative z-10">
+                                <div class="w-16 h-16 rounded-[1.25rem] bg-gradient-to-br from-amber-500/20 to-amber-500/5 flex items-center justify-center border border-amber-500/30 mb-8 group-hover:scale-110 transition-transform duration-500 origin-left shadow-[0_0_30px_rgba(245,158,11,0.4)]">
+                                    <i class="ph-fill ph-jeep text-4xl text-amber-400"></i>
+                                </div>
+                                <span class="text-amber-400 font-extrabold text-[11px] md:text-sm tracking-widest uppercase mb-3 block">Automotive Retail</span>
+                                <h3 class="text-2xl md:text-4xl font-black text-white leading-tight">Brand & Retail Strategy</h3>
+                                <div class="max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100 transition-all duration-700 ease-in-out overflow-hidden mt-0 group-hover:mt-4">
+                                    <p class="text-sm md:text-base text-slate-400 leading-relaxed font-medium">Understanding global brand positioning, lifestyle marketing, and sales operations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80" alt="Motorcycle" class="absolute -top-20 md:-top-28 right-6 md:right-8 w-48 h-48 md:w-72 md:h-72 object-cover rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 transform -rotate-6 group-hover:rotate-0 group-hover:scale-[1.08] group-hover:-translate-y-6 transition-all duration-[800ms] ease-bounce-smooth z-20">
+                    </div>
+
+                    <div class="relative w-[360px] md:w-[500px] h-[420px] md:h-[500px] shrink-0 group cursor-interactive mt-20 md:mt-32">
+                        <div class="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-3xl rounded-[3rem] border border-white/10 group-hover:border-indigo-500/50 transition-all duration-700 overflow-hidden flex flex-col p-10 shadow-2xl group-hover:shadow-[0_0_60px_rgba(99,102,241,0.2)]">
+                            <div class="absolute inset-0 bg-noise opacity-30"></div>
+                            <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-indigo-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                            
+                            <div class="mt-auto relative z-10">
+                                <div class="w-16 h-16 rounded-[1.25rem] bg-gradient-to-br from-indigo-500/20 to-indigo-500/5 flex items-center justify-center border border-indigo-500/30 mb-8 group-hover:scale-110 transition-transform duration-500 origin-left shadow-[0_0_30px_rgba(99,102,241,0.4)]">
+                                    <i class="ph-fill ph-motorcycle text-4xl text-indigo-400"></i>
+                                </div>
+                                <span class="text-indigo-400 font-extrabold text-[11px] md:text-sm tracking-widest uppercase mb-3 block">Global Logistics</span>
+                                <h3 class="text-2xl md:text-4xl font-black text-white leading-tight">Supply Chain Networks</h3>
+                                <div class="max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100 transition-all duration-700 ease-in-out overflow-hidden mt-0 group-hover:mt-4">
+                                    <p class="text-sm md:text-base text-slate-400 leading-relaxed font-medium">Immersive insights into global distribution networks and supply chain efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=800&q=80" alt="Racing" class="absolute -top-20 md:-top-28 right-6 md:right-8 w-48 h-48 md:w-72 md:h-72 object-cover rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 transform rotate-12 group-hover:rotate-0 group-hover:scale-[1.08] group-hover:-translate-y-6 transition-all duration-[800ms] ease-bounce-smooth z-20">
+                    </div>
+
+                    <div class="relative w-[360px] md:w-[500px] h-[420px] md:h-[500px] shrink-0 group cursor-interactive mt-20 md:mt-32">
+                        <div class="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-3xl rounded-[3rem] border border-white/10 group-hover:border-sky-500/50 transition-all duration-700 overflow-hidden flex flex-col p-10 shadow-2xl group-hover:shadow-[0_0_60px_rgba(14,165,233,0.2)]">
+                            <div class="absolute inset-0 bg-noise opacity-30"></div>
+                            <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-sky-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                            
+                            <div class="mt-auto relative z-10">
+                                <div class="w-16 h-16 rounded-[1.25rem] bg-gradient-to-br from-sky-500/20 to-sky-500/5 flex items-center justify-center border border-sky-500/30 mb-8 group-hover:scale-110 transition-transform duration-500 origin-left shadow-[0_0_30px_rgba(14,165,233,0.4)]">
+                                    <i class="ph-fill ph-desktop text-4xl text-sky-400"></i>
+                                </div>
+                                <span class="text-sky-400 font-extrabold text-[11px] md:text-sm tracking-widest uppercase mb-3 block">IT Consulting</span>
+                                <h3 class="text-2xl md:text-4xl font-black text-white leading-tight">Digital Transformation</h3>
+                                <div class="max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100 transition-all duration-700 ease-in-out overflow-hidden mt-0 group-hover:mt-4">
+                                    <p class="text-sm md:text-base text-slate-400 leading-relaxed font-medium">Understanding B2B tech consulting and digital transformation pathways.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80" alt="Consulting" class="absolute -top-20 md:-top-28 right-6 md:right-8 w-48 h-48 md:w-72 md:h-72 object-cover rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 transform -rotate-12 group-hover:rotate-0 group-hover:scale-[1.08] group-hover:-translate-y-6 transition-all duration-[800ms] ease-bounce-smooth z-20">
+                    </div>
+
+                    <div class="relative w-[360px] md:w-[500px] h-[420px] md:h-[500px] shrink-0 group cursor-interactive mt-20 md:mt-32">
+                        <div class="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-3xl rounded-[3rem] border border-white/10 group-hover:border-emerald-500/50 transition-all duration-700 overflow-hidden flex flex-col p-10 shadow-2xl group-hover:shadow-[0_0_60px_rgba(16,185,129,0.2)]">
+                            <div class="absolute inset-0 bg-noise opacity-30"></div>
+                            <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                            
+                            <div class="mt-auto relative z-10">
+                                <div class="w-16 h-16 rounded-[1.25rem] bg-gradient-to-br from-emerald-500/20 to-emerald-500/5 flex items-center justify-center border border-emerald-500/30 mb-8 group-hover:scale-110 transition-transform duration-500 origin-left shadow-[0_0_30px_rgba(16,185,129,0.4)]">
+                                    <i class="ph-fill ph-circuitry text-4xl text-emerald-400"></i>
+                                </div>
+                                <span class="text-emerald-400 font-extrabold text-[11px] md:text-sm tracking-widest uppercase mb-3 block">System Integration</span>
+                                <h3 class="text-2xl md:text-4xl font-black text-white leading-tight">Global Integration</h3>
+                                <div class="max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100 transition-all duration-700 ease-in-out overflow-hidden mt-0 group-hover:mt-4">
+                                    <p class="text-sm md:text-base text-slate-400 leading-relaxed font-medium">Exposure to global systems integration and cutting-edge operational frameworks.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Workspace" class="absolute -top-20 md:-top-28 right-6 md:right-8 w-48 h-48 md:w-72 md:h-72 object-cover rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 transform rotate-6 group-hover:rotate-0 group-hover:scale-[1.08] group-hover:-translate-y-6 transition-all duration-[800ms] ease-bounce-smooth z-20">
+                    </div>
+
+                    <div class="relative w-[360px] md:w-[500px] h-[420px] md:h-[500px] shrink-0 group cursor-interactive mt-20 md:mt-32">
+                        <div class="absolute inset-0 bg-[#0f172a]/60 backdrop-blur-3xl rounded-[3rem] border border-white/10 group-hover:border-cyan-600/50 transition-all duration-700 overflow-hidden flex flex-col p-10 shadow-2xl group-hover:shadow-[0_0_60px_rgba(8,145,178,0.2)]">
+                            <div class="absolute inset-0 bg-noise opacity-30"></div>
+                            <div class="absolute top-0 right-0 w-full h-full bg-gradient-to-br from-cyan-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                            
+                            <div class="mt-auto relative z-10">
+                                <div class="w-16 h-16 rounded-[1.25rem] bg-gradient-to-br from-cyan-500/20 to-cyan-500/5 flex items-center justify-center border border-cyan-500/30 mb-8 group-hover:scale-110 transition-transform duration-500 origin-left shadow-[0_0_30px_rgba(8,145,178,0.4)]">
+                                    <i class="ph-fill ph-graph text-4xl text-cyan-400"></i>
+                                </div>
+                                <span class="text-cyan-400 font-extrabold text-[11px] md:text-sm tracking-widest uppercase mb-3 block">Network Hardware</span>
+                                <h3 class="text-2xl md:text-4xl font-black text-white leading-tight">Networking Architecture</h3>
+                                <div class="max-h-0 opacity-0 group-hover:max-h-32 group-hover:opacity-100 transition-all duration-700 ease-in-out overflow-hidden mt-0 group-hover:mt-4">
+                                    <p class="text-sm md:text-base text-slate-400 leading-relaxed font-medium">Understanding global corporate networking and hardware sales operations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80" alt="Networking" class="absolute -top-20 md:-top-28 right-6 md:right-8 w-48 h-48 md:w-72 md:h-72 object-cover rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.9)] border border-white/10 transform -rotate-6 group-hover:rotate-0 group-hover:scale-[1.08] group-hover:-translate-y-6 transition-all duration-[800ms] ease-bounce-smooth z-20">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 pt-20 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-12 gsap-reveal">
+                <div class="flex flex-col items-center justify-center opacity-60 hover:opacity-100 hover:-translate-y-2 transition-all duration-300">
+                    <i class="ph-fill ph-medal text-[4rem] text-white mb-5"></i>
+                    <span class="text-white font-extrabold tracking-widest text-xs uppercase text-center">NAAC A+ Accredited</span>
+                </div>
+                <div class="flex flex-col items-center justify-center opacity-60 hover:opacity-100 hover:-translate-y-2 transition-all duration-300">
+                    <i class="ph-fill ph-shield-check text-[4rem] text-white mb-5"></i>
+                    <span class="text-white font-extrabold tracking-widest text-xs uppercase text-center">AICTE Approved</span>
+                </div>
+                <div class="flex flex-col items-center justify-center opacity-60 hover:opacity-100 hover:-translate-y-2 transition-all duration-300">
+                    <i class="ph-fill ph-bank text-[4rem] text-white mb-5"></i>
+                    <span class="text-white font-extrabold tracking-widest text-xs uppercase text-center">UGC Autonomous</span>
+                </div>
+                <div class="flex flex-col items-center justify-center opacity-60 hover:opacity-100 hover:-translate-y-2 transition-all duration-300">
+                    <i class="ph-fill ph-certificate text-[4rem] text-white mb-5"></i>
+                    <span class="text-white font-extrabold tracking-widest text-xs uppercase text-center">ISO 9001:2015</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="shape-divider-bottom z-30">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="fill-slate-50"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="faculty" class="scroll-mt-28 bg-slate-50 py-24 md:py-32 px-4 sm:px-6 lg:px-12 relative z-20 overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-slate-100 to-transparent z-0 pointer-events-none"></div>
+
+        <div class="max-w-[90rem] mx-auto relative z-10">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8 gsap-reveal">
+                <div class="max-w-3xl">
+                    <span class="text-brand-600 font-extrabold tracking-widest uppercase text-sm mb-5 flex items-center gap-3">
+                        <div class="w-10 h-[3px] bg-brand-600 rounded-full"></div> Core Pillars
+                    </span>
+                    <h2 class="text-4xl md:text-6xl lg:text-[5rem] font-black text-slate-900 tracking-tight leading-[1.05] mask-wrapper">
+                        <span class="mask-text">Our dedicated</span><br>
+                        <span class="mask-text">faculties & mentors.</span>
+                    </h2>
+                </div>
+                <div class="md:pb-4 max-w-sm">
+                    <p class="text-slate-500 font-medium text-lg">Guided by industry veterans and elite academicians, bridging the gap between theory and executive application.</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                
+                <div class="group relative h-[450px] md:h-[600px] w-full rounded-[3rem] overflow-hidden cursor-interactive gsap-stagger shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-[0_30px_60px_-15px_rgba(190,37,70,0.2)] transition-shadow duration-700">
+                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1200&q=80" alt="Academics" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-expo group-hover:scale-105">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#030712] via-[#030712]/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-700"></div>
+                    
+                    <div class="absolute top-8 left-8 bg-white/10 backdrop-blur-xl border border-white/20 px-5 py-2.5 rounded-full flex items-center gap-2 transform -translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                        <div class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></div>
+                        <span class="text-white text-xs font-bold tracking-widest uppercase">Academics</span>
+                    </div>
+
+                    <div class="absolute bottom-6 left-6 right-6 lg:bottom-10 lg:left-10 lg:right-10 bg-[#0f172a]/80 backdrop-blur-2xl border border-white/10 rounded-[2rem] p-8 md:p-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-700 ease-expo">
+                        <div class="flex -space-x-3 mb-6">
+                            <img class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#0f172a] object-cover" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&q=80" alt="Faculty">
+                            <img class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#0f172a] object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=100&q=80" alt="Faculty">
+                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#0f172a] bg-brand-600 flex items-center justify-center text-white text-xs font-bold">+15</div>
+                        </div>
+                        
+                        <h3 class="text-2xl md:text-4xl font-black text-white mb-4">PhD-Qualified Experts</h3>
+                        <p class="text-slate-300 text-sm md:text-base leading-relaxed font-medium mb-0 opacity-80 group-hover:opacity-100 transition-opacity duration-500 delay-200">Learn from top-tier academicians with profound experience spanning premier institutions like IIMs and reputed international universities.</p>
+                        
+                        <div class="absolute top-8 right-8 w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white transform -rotate-45 group-hover:rotate-0 group-hover:bg-brand-600 group-hover:border-brand-600 transition-all duration-500 ease-bounce-smooth">
+                            <i class="ph ph-arrow-right text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative h-[450px] md:h-[600px] w-full rounded-[3rem] overflow-hidden cursor-interactive gsap-stagger shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] hover:shadow-[0_30px_60px_-15px_rgba(37,99,235,0.2)] transition-shadow duration-700 mt-0 md:mt-12">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Mentorship" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[2s] ease-expo group-hover:scale-105">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#030712] via-[#030712]/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-700"></div>
+                    
+                    <div class="absolute top-8 left-8 bg-white/10 backdrop-blur-xl border border-white/20 px-5 py-2.5 rounded-full flex items-center gap-2 transform -translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                        <div class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></div>
+                        <span class="text-white text-xs font-bold tracking-widest uppercase">Mentorship</span>
+                    </div>
+
+                    <div class="absolute bottom-6 left-6 right-6 lg:bottom-10 lg:left-10 lg:right-10 bg-[#0f172a]/80 backdrop-blur-2xl border border-white/10 rounded-[2rem] p-8 md:p-10 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-700 ease-expo">
+                        <div class="flex -space-x-3 mb-6">
+                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#0f172a] bg-blue-100 flex items-center justify-center text-blue-600"><i class="ph-fill ph-users-three text-xl"></i></div>
+                            <div class="w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#0f172a] bg-brand-100 flex items-center justify-center text-brand-600"><i class="ph-fill ph-target text-xl"></i></div>
+                        </div>
+                        
+                        <h3 class="text-2xl md:text-4xl font-black text-white mb-4">Continuous Guidance</h3>
+                        <p class="text-slate-300 text-sm md:text-base leading-relaxed font-medium mb-0 opacity-80 group-hover:opacity-100 transition-opacity duration-500 delay-200">Holistic mentoring enabled through a 100% residential ecosystem, extending personalized professional guidance far beyond traditional classroom hours.</p>
+                        
+                        <div class="absolute top-8 right-8 w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white transform -rotate-45 group-hover:rotate-0 group-hover:bg-blue-600 group-hover:border-blue-600 transition-all duration-500 ease-bounce-smooth">
+                            <i class="ph ph-arrow-right text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="fees" class="scroll-mt-28 py-32 bg-white relative overflow-hidden z-10 border-y border-slate-200">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-brand-600 font-extrabold tracking-widest uppercase text-sm mb-4 block gsap-reveal">Fees</span>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight mask-wrapper"><span class="mask-text">Clear. Simple. Honest.</span></h2>
+                <p class="mt-6 text-lg text-slate-500 max-w-xl mx-auto font-medium gsap-reveal">No hidden costs. See exactly what you pay for the 2026–2030 cohort.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
+
+                <div class="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col cursor-interactive gsap-stagger group">
+                    <div class="mb-8">
+                        <span class="text-brand-600 bg-brand-50 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">One-Time</span>
+                        <h3 class="text-2xl font-black text-slate-900 mt-4">Setup</h3>
+                        <p class="text-slate-500 text-sm mt-2">Due at enrollment.</p>
+                    </div>
+                    <div class="text-4xl font-black text-slate-900 mb-8 border-b border-slate-200 pb-8 group-hover:border-brand-200 transition-colors">
+                        ₹12,340
+                    </div>
+                    <ul class="space-y-4 text-sm font-medium text-slate-600 flex-grow">
+                        <li class="flex justify-between items-center"><span>Admission Fee</span> <span class="font-bold text-slate-900">₹500</span></li>
+                        <li class="flex justify-between items-center"><span>Admin Fee</span> <span class="font-bold text-slate-900">₹1,840</span></li>
+                        <li class="flex justify-between items-center"><span>Deposit (Refundable)</span> <span class="font-bold text-slate-900">₹10,000</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-900 rounded-3xl p-8 shadow-xl border border-slate-800 hover:shadow-2xl hover:shadow-brand-500/20 hover:-translate-y-2 transition-all duration-300 flex flex-col cursor-interactive gsap-stagger transform lg:-translate-y-4 relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-gradient-to-br from-brand-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <div class="mb-8 relative z-10">
+                        <span class="text-white bg-brand-600 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider shadow-glow">Yearly</span>
+                        <h3 class="text-2xl font-black text-white mt-4">Tuition</h3>
+                        <p class="text-slate-400 text-sm mt-2">Core learning cost.</p>
+                    </div>
+                    <div class="text-4xl font-black text-white mb-8 border-b border-slate-700 pb-8 relative z-10">
+                        ₹5.1L <span class="text-sm text-slate-400 font-normal">/ yr</span>
+                    </div>
+                    <ul class="space-y-4 text-sm font-medium text-slate-300 flex-grow relative z-10">
+                        <li class="flex justify-between items-center"><span>Core Tuition</span> <span class="font-bold text-white">₹5.0L</span></li>
+                        <li class="flex justify-between items-center"><span>Facilities</span> <span class="font-bold text-white">₹10K</span></li>
+                        <li class="flex justify-between items-center"><span>Arts & Sports</span> <span class="font-bold text-white">₹530</span></li>
+                        <li class="flex justify-between items-center"><span>ID & Insure</span> <span class="font-bold text-white">₹250</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-slate-50 rounded-3xl p-8 shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col cursor-interactive gsap-stagger group">
+                    <div class="mb-8">
+                        <span class="text-slate-600 bg-slate-200 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Variable</span>
+                        <h3 class="text-2xl font-black text-slate-900 mt-4">Living</h3>
+                        <p class="text-slate-500 text-sm mt-2">Campus life expenses.</p>
+                    </div>
+                    <div class="text-4xl font-black text-slate-900 mb-8 border-b border-slate-200 pb-8 group-hover:border-slate-300 transition-colors">
+                        Actuals
+                    </div>
+                    <ul class="space-y-4 text-sm font-medium text-slate-600 flex-grow">
+                        <li class="flex justify-between items-center"><span>Hostel & Mess</span> <span class="font-bold text-slate-900">Per usage</span></li>
+                        <li class="flex justify-between items-center"><span>Uniforms (Once)</span> <span class="font-bold text-slate-900">₹4.5K+</span></li>
+                        <li class="flex justify-between items-center"><span>Books & Kits</span> <span class="font-bold text-slate-900">Variable</span></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="max-w-5xl mx-auto mt-12 bg-brand-50 border border-brand-100 p-8 rounded-3xl flex flex-col md:flex-row items-center justify-between gap-6 cursor-interactive gsap-reveal transition-all hover:bg-brand-100">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-600 shadow-sm shrink-0">
+                        <i class="ph-fill ph-star text-2xl"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold text-slate-900">Top 5% Merit Scholarship</h4>
+                        <p class="text-sm text-slate-600">Up to 50% tuition waiver for top entrance scores.</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">Est. 4-Year Total</div>
+                    <div class="text-2xl font-black text-brand-600">₹26L – ₹30L</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-32 md:py-40 bg-brand-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-noise z-0"></div>
+        <div class="absolute top-0 right-0 w-[600px] md:w-[800px] h-[600px] md:h-[800px] bg-brand-600/20 rounded-full blur-[100px] md:blur-[150px] -translate-y-1/2 translate-x-1/3"></div>
+        <div class="absolute bottom-0 left-0 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-blue-600/20 rounded-full blur-[100px] md:blur-[150px] translate-y-1/3 -translate-x-1/4"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-5xl md:text-7xl lg:text-[6rem] font-black mb-8 tracking-tight mask-wrapper leading-[1.05]"><span class="mask-text text-white">Ready to shape</span><br><span class="mask-text text-white">your future?</span></h2>
+            <p class="text-xl md:text-2xl text-slate-300 font-medium mb-12 max-w-2xl mx-auto gsap-reveal">
+                Join the elite cohort at Amal Jyothi Business School. Applications for the 2026–2027 BBA (Honours) batch are now live.
+            </p>
+            <div class="gsap-reveal">
+                <a href="https://forms.gle/8ciT1QfWcRUw5LpQ6\" target="_blank" class="magnetic-btn inline-flex items-center justify-center bg-brand-600 text-white px-10 md:px-14 py-6 rounded-full font-black text-lg md:text-xl hover:bg-white hover:text-brand-600 transition-all duration-300 shadow-[0_0_50px_rgba(190,37,70,0.5)] group cursor-interactive">
+                    <span>Register Now <i class="ph ph-arrow-right ml-3 text-2xl group-hover:translate-x-2 transition-transform inline-block"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#020617] text-white pt-24 md:pt-32 pb-12 border-t border-white/5 relative overflow-hidden">
+        <div class="absolute inset-0 bg-noise opacity-30 pointer-events-none"></div>
+        <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-12 relative z-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-20 md:mb-24">
+                <div class="lg:col-span-4 sm:col-span-2">
+                    <div class="flex items-center gap-4 mb-8">
+                        <img src="ajcelogo.png" onerror="this.onerror=null; this.src='ajcelogo.png';" alt="Logo" class="h-12 w-auto bg-white p-1 rounded-lg">
+                        <span class="font-black text-3xl tracking-tight text-white">Amal Jyothi</span>
+                    </div>
+                    <p class="text-slate-400 text-sm md:text-base leading-relaxed font-medium mb-10 md:pr-8">A fully residential, immersive BBA (Honours) programme designed to create ethical, industry-ready management professionals through rigorous academics and global exposure.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-600 hover:border-brand-600 transition-all duration-300 cursor-interactive"><i class="ph-fill ph-facebook-logo text-2xl"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-600 hover:border-brand-600 transition-all duration-300 cursor-interactive"><i class="ph-fill ph-twitter-logo text-2xl"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-600 hover:border-brand-600 transition-all duration-300 cursor-interactive"><i class="ph-fill ph-instagram-logo text-2xl"></i></a>
+                        <a href="#" class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-brand-600 hover:border-brand-600 transition-all duration-300 cursor-interactive"><i class="ph-fill ph-linkedin-logo text-2xl"></i></a>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 lg:col-start-6">
+                    <h4 class="text-white font-extrabold mb-8 text-lg uppercase tracking-widest">Programme</h4>
+                    <ul class="space-y-5">
+                        <li><a href="#overview" class="text-slate-400 hover:text-brand-400 transition-colors font-medium text-sm cursor-interactive">Overview</a></li>
+                        <li><a href="#curriculum" class="text-slate-400 hover:text-brand-400 transition-colors font-medium text-sm cursor-interactive">Curriculum</a></li>
+                        <li><a href="#pedagogy" class="text-slate-400 hover:text-brand-400 transition-colors font-medium text-sm cursor-interactive">Pedagogy</a></li>
+                        <li><a href="#faculty" class="text-slate-400 hover:text-brand-400 transition-colors font-medium text-sm cursor-interactive">Faculty & Mentors</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-2">
+                    <h4 class="text-white font-extrabold mb-8 text-lg uppercase tracking-widest">Admissions</h4>
+                    <ul class="space-y-5">
+                        <li><a href="#fees" class="text-slate-400 hover:text-brand-400 transition-colors font-medium text-sm cursor-interactive">Fee Structure</a></li>
+                        <li><a href="https://forms.gle/8ciT1QfWcRUw5LpQ6\" target="_blank" class="text-slate-400 hover:text-brand-400 transition-colors font-medium text-sm cursor-interactive">Apply Online</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-brand-400 transition-colors font-medium text-sm cursor-interactive">Brochure Download</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-brand-400 transition-colors font-medium text-sm cursor-interactive">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-3 sm:col-span-2">
+                    <h4 class="text-white font-extrabold mb-8 text-lg uppercase tracking-widest">Contact Us</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4"><i class="ph-fill ph-map-pin text-brand-500 text-2xl mt-1"></i><span class="text-slate-400 text-sm leading-relaxed font-medium">Amal Jyothi College of Engineering<br>Kanjirappally, Kerala, India</span></li>
+                        <li class="flex items-center gap-4"><i class="ph-fill ph-envelope-simple text-brand-500 text-2xl"></i><a href="mailto:admissions@amaljyothi.ac.in" class="text-slate-400 hover:text-white transition-colors font-medium text-sm cursor-interactive">admissions@amaljyothi.ac.in</a></li>
+                        <li class="flex items-center gap-4"><i class="ph-fill ph-phone text-brand-500 text-2xl"></i><a href="tel:+910000000000" class="text-slate-400 hover:text-white transition-colors font-medium text-sm cursor-interactive">+91 00000 00000</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+                <p class="text-slate-500 font-medium text-xs md:text-sm">&copy; 2026 Amal Jyothi Business School. All rights reserved.</p>
+                <div class="flex gap-6 text-xs md:text-sm text-slate-500 font-bold">
+                    <a href="#" class="hover:text-white transition-colors cursor-interactive">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors cursor-interactive">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+        // 1. Lenis Smooth Scroll Setup
+        const lenis = new Lenis({ duration: 1.5, easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), touchMultiplier: 1.5 });
+        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
+        requestAnimationFrame(raf);
+
+        // 2. Custom Cursor Logic
+        const cursorDot = document.querySelector('.cursor-dot');
+        const cursorOutline = document.querySelector('.cursor-outline');
+        let cursorX = 0, cursorY = 0;
+        
+        window.addEventListener('mousemove', (e) => {
+            cursorDot.style.transform = `translate(${e.clientX}px, ${e.clientY}px) translate(-50%, -50%)`;
+            cursorX = e.clientX; cursorY = e.clientY;
+        });
+        
+        function loop() {
+            const ease = 0.15;
+            const transform = cursorOutline.style.transform;
+            let currentX = 0, currentY = 0;
+            if (transform) {
+                const match = transform.match(/translate\(([^px]+)px,\s*([^px]+)px\)/);
+                if (match) { currentX = parseFloat(match[1]); currentY = parseFloat(match[2]); }
+            }
+            const dx = cursorX - currentX;
+            const dy = cursorY - currentY;
+            cursorOutline.style.transform = `translate(${currentX + dx * ease}px, ${currentY + dy * ease}px) translate(-50%, -50%)`;
+            requestAnimationFrame(loop);
+        } loop();
+
+        // Cursor Hover States
+        document.querySelectorAll('a, button, .cursor-interactive, summary, .group').forEach(el => {
+            el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+            el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
+        });
+        
+        // Video Play Hover State
+        document.getElementById('openVideoBtn').addEventListener('mouseenter', () => {
+            document.body.classList.add('video-hover');
+        });
+        document.getElementById('openVideoBtn').addEventListener('mouseleave', () => {
+            document.body.classList.remove('video-hover');
+        });
+
+        // 3. Video Modal Logic
+        const videoModal = document.getElementById('videoModal');
+        const videoContainer = document.getElementById('videoContainer');
+        const openVideoBtn = document.getElementById('openVideoBtn');
+        const closeVideoBtn = document.getElementById('closeVideoBtn');
+        const campusVideo = document.getElementById('campusVideo');
+
+        openVideoBtn.addEventListener('click', () => {
+            videoModal.classList.remove('opacity-0', 'pointer-events-none');
+            setTimeout(() => videoContainer.classList.remove('scale-95'), 50);
+            campusVideo.play();
+            lenis.stop();
+        });
+
+        closeVideoBtn.addEventListener('click', closeVideo);
+        videoModal.addEventListener('click', (e) => { if(e.target === videoModal) closeVideo(); });
+
+        function closeVideo() {
+            videoContainer.classList.add('scale-95');
+            setTimeout(() => videoModal.classList.add('opacity-0', 'pointer-events-none'), 500);
+            campusVideo.pause();
+            campusVideo.currentTime = 0;
+            lenis.start();
+        }
+
+        // 4. Magnetic Buttons
+        document.querySelectorAll('.magnetic-btn').forEach((el) => {
+            const inner = el.querySelector('span');
+            el.addEventListener('mousemove', (e) => {
+                const rect = el.getBoundingClientRect();
+                const x = (e.clientX - rect.left - rect.width / 2) * 0.3;
+                const y = (e.clientY - rect.top - rect.height / 2) * 0.3;
+                gsap.to(el, { x: x, y: y, duration: 0.6, ease: "power2.out" });
+                if(inner) gsap.to(inner, { x: x*0.5, y: y*0.5, duration: 0.6, ease: "power2.out" });
+            });
+            el.addEventListener('mouseleave', () => {
+                gsap.to(el, { x: 0, y: 0, duration: 0.8, ease: "elastic.out(1, 0.3)" });
+                if(inner) gsap.to(inner, { x: 0, y: 0, duration: 0.8, ease: "elastic.out(1, 0.3)" });
+            });
+        });
+
+        // 5. Scroll Progress Indicator
+        const scrollProgress = document.getElementById('scroll-progress');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            scrollProgress.style.width = `${(scrollTop / docHeight) * 100}%`;
+        });
+
+        // 6. Mobile Menu Toggle Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => { mobileMenu.classList.add('open'); lenis.stop(); });
+        closeMenuBtn.addEventListener('click', () => { mobileMenu.classList.remove('open'); lenis.start(); });
+        mobileLinks.forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.remove('open'); lenis.start(); }); });
+
+        // 7. Enhanced Navbar Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // 8. GSAP Advanced Scroll Animations & Dynamics
+        gsap.registerPlugin(ScrollTrigger);
+
+        window.onload = () => {
+            // Hero Entry
+            gsap.to('.hero-stagger', { y: 0, opacity: 1, duration: 1.2, stagger: 0.15, ease: 'power4.out', delay: 0.2 });
+            
+            // Mask Text Reveals
+            document.querySelectorAll('.mask-text').forEach(text => {
+                gsap.to(text, { scrollTrigger: { trigger: text.parentElement, start: 'top 90%' }, y: 0, rotation: 0, duration: 1.2, ease: 'power4.out' });
+            });
+
+            // Number Counters
+            document.querySelectorAll('.counter').forEach(counter => {
+                ScrollTrigger.create({
+                    trigger: counter, start: "top 90%", once: true,
+                    onEnter: () => {
+                        gsap.to(counter, {
+                            innerHTML: counter.getAttribute('data-target'),
+                            duration: 2.5, ease: "power3.out", snap: { innerHTML: 1 },
+                            onUpdate: function() { counter.innerHTML = Math.round(this.targets()[0].innerHTML); }
+                        });
+                    }
+                });
+            });
+
+            // Standard Reveals
+            gsap.utils.toArray('.gsap-reveal').forEach(elem => {
+                gsap.from(elem, { scrollTrigger: { trigger: elem, start: "top 85%" }, y: 50, opacity: 0, duration: 1.2, ease: "power4.out" });
+            });
+
+            // Staggered Grids
+            gsap.utils.toArray('.gsap-stagger').forEach((elem, i) => {
+                gsap.from(elem, { scrollTrigger: { trigger: elem, start: "top 85%" }, y: 60, rotation: 2, opacity: 0, duration: 1.2, ease: "power4.out" });
+            });
+
+            // Image Parallax
+            gsap.utils.toArray('.gsap-parallax').forEach(img => {
+                gsap.to(img, { scrollTrigger: { trigger: img.parentElement, start: "top bottom", end: "bottom top", scrub: true }, yPercent: 20, ease: "none" });
+            });
+
+            // --- UPGRADED PARTNER LOGO HORIZONTAL SCROLL ---
+            if(document.querySelector(".scroll-move-left")) {
+                gsap.to(".scroll-move-left", {
+                    xPercent: -35, ease: "none",
+                    scrollTrigger: { trigger: "#partners", start: "top bottom", end: "bottom top", scrub: 1 }
+                });
+                
+                gsap.to(".scroll-move-right", {
+                    xPercent: 35, ease: "none",
+                    scrollTrigger: { trigger: "#partners", start: "top bottom", end: "bottom top", scrub: 1 }
+                });
+            }
+
+            // --- UPDATED: CLEAN VERTICAL SCROLL (BEYOND BORDERS) ---
+            const exposureSections = gsap.utils.toArray('.exposure-section');
+
+            exposureSections.forEach((section) => {
+                const content = section.querySelector('.exposure-content');
+                const img = section.querySelector('img');
+
+                // Content Reveal Animation
+                gsap.fromTo(content, 
+                    { opacity: 0, y: 60, scale: 0.96 },
+                    { 
+                        opacity: 1, y: 0, scale: 1,
+                        ease: "power2.out",
+                        scrollTrigger: {
+                            trigger: section,
+                            start: "top 75%",
+                            end: "top 30%",
+                            scrub: true
+                        }
+                    }
+                );
+
+                // Content Exit Animation (fades out as it scrolls up)
+                gsap.to(content, {
+                    opacity: 0, y: -40, scale: 0.96,
+                    ease: "power2.in",
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "bottom 70%",
+                        end: "bottom 30%",
+                        scrub: true
+                    }
+                });
+
+                // Gentle Image Parallax effect
+                if (img) {
+                    gsap.fromTo(img, 
+                        { scale: 1.05, yPercent: -10 },
+                        { 
+                            scale: 1, yPercent: 10,
+                            ease: "none",
+                            scrollTrigger: {
+                                trigger: section,
+                                start: "top bottom",
+                                end: "bottom top",
+                                scrub: true
+                            }
+                        }
+                    );
+                }
+            });
+
+            // --- DYNAMIC PEDAGOGY TIMELINE ---
+            const pedTimelineLine = document.getElementById('timeline-line');
+            if(pedTimelineLine) {
+                gsap.to(pedTimelineLine, {
+                    scrollTrigger: {
+                        trigger: "#pedagogy .space-y-20",
+                        start: "top center",
+                        end: "bottom center",
+                        scrub: true
+                    },
+                    height: "100%",
+                    ease: "none"
+                });
+
+                gsap.utils.toArray('.scroll-timeline-item').forEach((item) => {
+                    const dot = item.querySelector('.timeline-dot');
+                    ScrollTrigger.create({
+                        trigger: item,
+                        start: "top center",
+                        onEnter: () => {
+                            dot.classList.remove('bg-white', 'text-slate-400', 'border-slate-200');
+                            dot.classList.add('bg-brand-600', 'text-white', 'border-brand-200');
+                            gsap.fromTo(dot, {scale: 0.8}, {scale: 1, duration: 0.6, ease: "back.out(1.7)"});
+                        },
+                        onLeaveBack: () => {
+                            dot.classList.add('bg-white', 'text-slate-400', 'border-slate-200');
+                            dot.classList.remove('bg-brand-600', 'text-white', 'border-brand-200');
+                        }
+                    });
+                });
+            }
+        };
+
+        // 9. Modern Accordion Logic
+        function toggleAccordion(button) {
+            const item = button.parentElement;
+            const content = button.nextElementSibling;
+            
+            if (item.classList.contains('active')) {
+                item.classList.remove('active');
+                content.classList.remove('open');
+            } else {
+                document.querySelectorAll('.accordion-item').forEach(accItem => {
+                    accItem.classList.remove('active');
+                    const relatedContent = accItem.querySelector('.accordion-content');
+                    if(relatedContent) relatedContent.classList.remove('open');
+                });
+                item.classList.add('active');
+                content.classList.add('open');
+            }
+            setTimeout(() => { lenis.resize(); ScrollTrigger.refresh(); }, 600); 
+        }
+
+        // 10. Hero Typewriter Effect
+        const words = ["Future Leaders.", "Global Innovators.", "Modern Entrepreneurs."];
+        let i = 0, timer;
+        function typingEffect() {
+            let word = words[i].split("");
+            var loopTyping = function() {
+                if (word.length > 0) { document.getElementById('typed-text').innerHTML += word.shift(); } 
+                else { setTimeout(deletingEffect, 2500); return false; }
+                timer = setTimeout(loopTyping, 80);
+            }; loopTyping();
+        }
+        function deletingEffect() {
+            let word = words[i].split("");
+            var loopDeleting = function() {
+                if (word.length > 0) { word.pop(); document.getElementById('typed-text').innerHTML = word.join(""); } 
+                else { i = (words.length > (i + 1)) ? i + 1 : 0; typingEffect(); return false; }
+                timer = setTimeout(loopDeleting, 30);
+            }; loopDeleting();
+        }
+        setTimeout(typingEffect, 1200);
+
+        // 11. Vanilla JS 3D Tilt Effect
+        const tiltCards = document.querySelectorAll('.tilt-card');
+        tiltCards.forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = ((y - centerY) / centerY) * -8;
+                const rotateY = ((x - centerX) / centerX) * 8;
+                
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+                card.style.transition = "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)";
+            });
+            card.addEventListener('mouseenter', () => {
+                card.style.transition = "none";
+            });
+        });
+
+    </script>
+</body>
+</html>
